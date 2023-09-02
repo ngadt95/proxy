@@ -12,5 +12,5 @@ if ! command_exists docker; then
 fi
 
 echo "Starting squid proxy..."
-docker run --name squidproxy -d --restart always -p 8888:3128 -e SQUID_USER=proxy2023!@. -e SQUID_PASS=proxy2023!@. ngadt95/createproxy
+docker run --name squidproxy -d --restart always -p 8888:3128 -e SQUID_USER=proxy2023@. -e SQUID_PASS=proxy2023@. ngadt95/createproxy
 echo "Done!"
